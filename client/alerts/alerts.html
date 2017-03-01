@@ -1,0 +1,81 @@
+<template name="alerts">
+	<div class="panel panel-danger">
+	  <div class="panel-heading"><a href="#" class="dash-overview">News Bulletin</a></div>
+	  <div class="panel-body">
+
+	  	{{#if micB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some microphones in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if consoleB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some consoles in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if monitoringB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some monitorin equipment in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if preampB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some preamps in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if outboardB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some outboard equipment in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if ampB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some amplifiers in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if expendableB}}
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<b>Attention:</b> Some expendables in need of repair! Check the 
+			<a class="alert-link" href="#">priority repairs</a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+	  	{{#if allOK}}
+		<div class="alert alert-success alert-dismissible" role="alert">
+			Everything works as expected. You take good care of your gear, keep up the good work!
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{{/if}}
+
+
+	  </div>
+	</div>
+</template>

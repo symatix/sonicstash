@@ -1,0 +1,108 @@
+<template name="dashboard">
+	<div class="heading">
+		<h2>Dashboard</h2>
+	</div>
+	<div class="container container-sidebar-fix">
+		<div class="row">
+			<div class="col-xs-12">
+				{{> alerts}}
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_mic">
+				  <div class="panel-heading"><a href="/microphone" class="dash-overview">Microphones</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{micT}}</b><br>
+				    In stash: <b>{{micS}}</b><br>
+				    In use: <b>{{micU}}</b><br>
+				    Out of order: <b class="dash-alert">{{micB}}</b><br>
+				    Whishlist: <b>{{micW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_mix">
+				  <div class="panel-heading"><a href="/console" class="dash-overview">Consoles</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{consoleT}}</b><br>
+				    In stash: <b>{{consoleS}}</b><br>
+				    In use: <b>{{consoleU}}</b><br>
+				    Out of order: <b class="dash-alert">{{consoleB}}</b><br>
+				    Whishlist: <b>{{consoleW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_monitors">
+				  <div class="panel-heading"><a href="/monitoring" class="dash-overview">Monitoring</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{monitoringT}}</b><br>
+				    In stash: <b>{{monitoringS}}</b><br>
+				    In use: <b>{{monitoringU}}</b><br>
+				    Out of order: <b class="dash-alert">{{monitoringB}}</b><br>
+				    Whishlist: <b>{{monitoringW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_outboard">
+				  <div class="panel-heading"><a href="/outboard" class="dash-overview">Outboard</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{outboardT}}</b><br>
+				    In stash: <b>{{outboardS}}</b><br>
+				    In use: <b>{{outboardU}}</b><br>
+				    Out of order: <b class="dash-alert">{{outboardB}}</b><br>
+				    Whishlist: <b>{{outboardW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_preamps">
+				  <div class="panel-heading"><a href="/preamp" class="dash-overview">Pre Amps</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{preampsT}}</b><br>
+				    In stash: <b>{{preampsS}}</b><br>
+				    In use: <b>{{preampsU}}</b><br>
+				    Out of order: <b class="dash-alert">{{preampsB}}</b><br>
+				    Whishlist: <b>{{preampsW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_amps">
+				  <div class="panel-heading"><a href="/Amp" class="dash-overview">Amps</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{ampsT}}</b><br>
+				    In stash: <b>{{ampsS}}</b><br>
+				    In use: <b>{{ampsU}}</b><br>
+				    Out of order: <b class="dash-alert">{{ampsB}}</b><br>
+				    Whishlist: <b>{{ampsW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_expendables">
+				  <div class="panel-heading"><a href="/Expendables" class="dash-overview">Expendables</a></div>
+				  <div class="panel-body">
+				    Total: <b>{{expendablesT}}</b><br>
+				    In stash: <b>{{expendablesS}}</b><br>
+				    In use: <b>{{expendablesU}}</b><br>
+				    Out of order: <b class="dash-alert">{{expendablesB}}</b><br>
+				    Whishlist: <b>{{expendablesW}}</b><br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="panel panel-default dash dash_overview">
+				  <div class="panel-heading"><a href="/Expendables" class="dash-overview">Overview</a></div>
+				  <div class="panel-body">
+				    Total items: <b>{{overviewT}}</b><br>
+				    In stash: <b>{{overviewS}}</b><br>
+				    In use: <b>{{overviewU}}</b><br>
+				    Out of order: <b class="dash-alert">{{overviewB}}</b><br>
+				    Whishlist: <b>{{overviewW}}</b><br>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

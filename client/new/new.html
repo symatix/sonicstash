@@ -1,0 +1,102 @@
+<template name="newItem">
+	<div class="heading">
+		<h2>New Item</h2>
+	</div>
+	<div class="container container-sidebar-fix">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="form-horizontal insertItem" role="form">
+				<div class="row">
+				    <div class="form-group">
+				        <label for="brand" class="col-sm-2 control-label">Brand</label>                        
+				        <div class="col-sm-3">
+				            <input type="text" class="form-control" id="brand" name="brand" placeholder="Enter Brand Name" value="{{brand}}">
+				        </div>
+				        <label for="model" class="col-sm-2 control-label">Model</label>
+				        <div class="col-sm-3">
+				            <input type="text" class="form-control" id="model" name="model" placeholder="Enter Model" value="{{model}}">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="category" class="col-sm-2 control-label">Category</label> 
+				        <div class="col-sm-3">
+				            <select class="form-control" id="category" value="{{category}}">
+    							<option disabled selected style='display:none;'>Select...</option>
+				                <option>Microphone</option>
+				                <option>Console</option>
+				                <option>Monitoring</option>
+				                <option>PreAmp</option>
+				                <option>Outboard</option>
+				                <option>Amp</option>
+				                <option>Expendables</option>
+				            </select>
+				        </div>
+				        <label for="available" class="col-sm-2 control-label">Available</label> 
+				        <div class="col-sm-3">
+				            <select class="form-control" id="available" value="{{available}}">
+    							<option disabled selected style='display:none;'>Select...</option>
+				                <option>In stash</option>
+				                <option>In use</option>
+				                <option>Wishlist</option>
+				            </select>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="serial" class="col-sm-2 control-label">Serial</label>                        
+				        <div class="col-sm-3">
+				            <input type="text" class="form-control" id="serial" name="serial" placeholder="Enter Serial Number" value="{{serial}}">
+				        </div>
+				        <label for="condition" class="col-sm-2 control-label">Condition</label> 
+				        <div class="col-sm-3">
+				            <select class="form-control" id="condition" value="{{condition}}">
+    							<option disabled selected style='display:none;'>Select...</option>
+				                <option>Working</option>
+				                <option>Out of service</option>
+				            </select>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="manual" class="col-sm-2 control-label">Manual</label>               
+				        <div class="col-sm-3">
+				            <input type="file" class="form-control" id="manual" name="manual">
+				        </div>
+				        <label for="image" class="col-sm-2 control-label">Image</label>                        
+				        <div class="col-sm-3">
+				            <input type="file" class="form-control" id="image" name="image">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="notes" class="col-sm-2 control-label">Notes</label>
+				        <div class="col-sm-8">
+				            <textarea class="form-control" id="notes" name="notes" rows="12"></textarea>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-sm-offset-2 col-sm-10">
+				            <button type="submit" class="btn btn-success">Stash it</button>
+				        </div>
+				    </div>
+				   </div>
+
+				   	<!-- hidden class, used for gettin data in main db -->
+				    <div class="manual_value hidden">
+				      <div class="individual-property">MANUAL: VALUE
+				        <input type="text" id="manual_value" placeholder="" value="{{data.manual}}">
+				      </div>
+				    </div>
+				    <div class="manual_id hidden">MANUAL: ID
+				        <input type="text" id="manual_id" placeholder="" value="{{data.manualId}}">
+				    </div>
+				    <div class="image_value hidden">IMAGE: VALUE
+				        <input type="text" id="image_value" placeholder="" value="{{data.image}}">
+				    </div>
+				    <div class="image_id hidden">IMAGE: ID
+				        <input type="text" id="image_id" placeholder="" value="{{data.imageId}}">
+				    </div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

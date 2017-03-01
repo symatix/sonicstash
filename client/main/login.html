@@ -1,0 +1,103 @@
+<template name="landing">
+	<div class="container">
+	  <div class="jumbotron">
+		  <div class="row">
+		  	<div class="col-xs-8">
+				<h1 class="login-brand-heading">SonicStash</h1> 
+				<h4 class="login-brand-heading" style="padding-left:40px">Tag it and stash it!</h4>
+				<p style="padding-left:">Your <b>go to</b> audio gear manager</p>
+			</div>
+			<div class="col-xs-4">
+				<img class="logo-splash" src="splash.png"/>
+			</div>
+		  </div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 loginScreen">
+        {{> login}}
+	  	</div>
+	  	<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 loginScreen">
+			<div class="alert alert-danger alert-dismissible login-error" role="alert">
+				<b>Wrong credentials...</b>
+			</div>
+		</div>
+	  </div>
+	</div>
+</template>
+
+<template name="register">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+    		<h1 class="login-brand-heading" style="padding-left:40px">SonicStash</h1>
+			<h4 class="login-brand-heading" style="padding-left:80px">Tag it and stash it!</h4> 
+    	</div>
+        <div class="col-md-6 col-md-offset-3">
+            <form class="register-form">
+                <div class="panel panel-default panel-register">
+                    <div class="panel-heading">
+                        <h3>Registration</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group col-lg-12">
+                            <label>Email</label>
+                            <input type="email"  class="form-control" id="email" value="">
+                        </div>
+ 
+                        <div class="form-group col-lg-6">
+                            <label>Name</label>
+                            <input type="text" name="" class="form-control" id="firstname" value="">
+                        </div>
+ 
+                        <div class="form-group col-lg-6">
+                            <label>Last Name</label>
+                            <input type="text" name="" class="form-control" id="lastname" value="">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label>Studio</label>
+                            <input type="studio"  class="form-control" id="studio" value="">
+                        </div>
+ 
+                        <div class="form-group col-lg-12">
+                            <label>Password</label>
+                            <input type="password" name="" class="form-control" id="password" value="">
+                        </div>
+                    </div>
+                    <div class="panel-footer center">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</template>
+
+
+<template name="login">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form class="login-form">
+                <div class="panel panel-default panel-login">
+                    <div class="panel-heading">
+                        <h3>Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group col-lg-12">
+                            <label>Email</label>
+                            <input type="email"  class="form-control" id="email" value="">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label>Password</label>
+                            <input type="password" name="" class="form-control" id="password" value="">
+                        </div>
+                    </div>
+                    <div class="panel-footer center">
+                        <button type="submit" class="btn btn-success">Login</button>
+                        <button class="btn btn-success btn-register-js">Register</button>  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

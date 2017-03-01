@@ -1,0 +1,57 @@
+<template name="sidebar">
+  <div class="nav-side-menu">
+      <div class="brand">SonicStash</div>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    
+          <div class="menu-list">
+    
+              <ul id="menu-content" class="menu-content collapse out">
+                  <a href="/dashboard">
+                    <li class="{{navClassName 'Dashboard'}}">
+                      &emsp;<i class="fa fa-bar-chart fa-lg"></i> Dashboard
+                    </li>
+                  </a>
+                  <a href="/new">
+                    <li class="{{navClassName 'New'}}">
+                      &emsp;<i class="fa fa-plus fa-lg"></i> New Item
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li  data-toggle="collapse" data-target="#inventory" class="collapsed">
+                      &emsp;<i class="fa fa-ellipsis-v fa-lg"></i>&emsp;Inventory <span class="arrow"></span>
+                    </li>
+                  </a>
+                  <ul class="sub-menu collapse" id="inventory">
+                      <a href="/microphone">
+                        <li class="{{navClassName 'Microphone'}}">Microphones</li>
+                      </a>
+                      <a href="/console"><li class="{{navClassName 'Console'}}">Consoles</li></a>
+                      <a href="/monitoring"><li class="{{navClassName 'Monitoring'}}">Monitoring</li></a>
+                      <a href="/preamp"><li class="{{navClassName 'Preamp'}}">Pre Amps</li></a>
+                      <a href="/outboard"><li class="{{navClassName 'Outboard'}}">Outboard</li></a>
+                      <a href="/Amp"><li class="{{navClassName 'Amp'}}">Amps</li></a>
+                      <a href="/Expendables"><li class="{{navClassName 'Expendables'}}">Expendables</li></a>
+                  </ul>
+                  <a href="#">
+                    <li data-toggle="collapse" data-target="#availability" class="collapsed">
+                      &emsp;<i class="fa fa-ellipsis-v fa-lg"></i>&emsp;Availability <span class="arrow"></span>
+                    </li>
+                  </a>
+                  <ul class="sub-menu collapse" id="availability">
+                    <a href="/instash"><li class="{{navClassName 'Instash'}}">In stash</li></a>
+                    <a href="/inuse"><li class="{{navClassName 'Inuse'}}">In use</li></a>
+                    <a href="/outofservice"><li class="{{navClassName 'Outofservice'}}">Out of service</li></a>
+                  </ul>
+                  <a href="/wishlist">
+                    <li class="{{navClassName 'Wishlist'}}">
+                      &emsp;<i class="fa fa-gift fa-lg"></i> Wish List
+                    </li>
+                  </a>
+                    <li id="empty">&emsp;</li>
+                  <a href="#" class="btn-logout">
+                    <li id="menu-content" class="menu-content">&emsp;{{currentUser.profile.studio}} - Log out</li>
+                  </a>
+              </ul>
+       </div>
+  </div>
+</template>
